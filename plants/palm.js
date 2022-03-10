@@ -4,13 +4,13 @@ const inquirer = require('inquirer');
 const { questions } = require('../questions');
 const { Plant } = require('../plant');
 
-class Palm extends Plant {
+class PalmTree extends Plant {
   constructor(name) {
     super(name);
   }
 
   async play() {
-    const { play } = await inquirer.prompt(questions.palmPlay);
+    const { play } = await inquirer.prompt(questions.palmTreePlay);
 
     if (play === 'PlayAcidJazz') this.boredom(-2);
     if (play === 'PlayCountryAndWestern') this.boredom(-5);
@@ -19,5 +19,5 @@ class Palm extends Plant {
 }
 
 module.exports = {
-  Palm,
+  PalmTree,
 };
