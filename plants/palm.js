@@ -19,5 +19,5 @@ class Palm extends Plant {
 }
 
 module.exports = {
-  Plam,
+  Palm,
 };
