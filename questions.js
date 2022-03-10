@@ -69,47 +69,6 @@ const questions = {
       ],
     },
   
-    // rabbitPlay: {
-    //   type: 'list',
-    //   name: 'play',
-    //   message: 'Do you want to play with?',
-    //   choices: [
-    //     {
-    //       key: 'a',
-    //       name: 'Straw: boredom -2',
-    //       value: 'straw',
-    //     },
-    //     {
-    //       key: 'b',
-    //       name: 'Paper towels: boredom -5',
-    //       value: 'paper',
-    //     },
-    //   ],
-    // },
-  
-    // parrotPlay: {
-    //   type: 'list',
-    //   name: 'play',
-    //   message: 'Do you want to play with?',
-    //   choices: [
-    //     {
-    //       key: 'a',
-    //       name: 'Learn a word: boredom -2',
-    //       value: 'word',
-    //     },
-    //     {
-    //       key: 'b',
-    //       name: 'Learn a swear word: boredom -5',
-    //       value: 'swear',
-    //     },
-    //     {
-    //       key: 'c',
-    //       name: 'Swear at the mail man: boredom -10',
-    //       value: 'mail',
-    //     },
-    //   ],
-    // },
-  
     typeOfPet: {
       type: 'list',
       name: 'typeOfPlant',
@@ -126,16 +85,6 @@ const questions = {
           name: 'palmTree',
           value: 'palmtree',
         },
-        // {
-        //   key: 'c',
-        //   name: 'Rabbit',
-        //   value: 'rabbit',
-        // },
-        // {
-        //   key: 'd',
-        //   name: 'Parrot',
-        //   value: 'parrot',
-        // },
       ],
     },
   

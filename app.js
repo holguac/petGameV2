@@ -203,57 +203,16 @@ const questions = {
 			},
 			{
 				key: 'b',
-				name: 'Club tropicana: boredom -5',
+				name: 'Club Tropicana: boredom -5',
 				value: 'PlayClubtropicana',
 			},
 			{
 				key: 'c',
-				name: 'Play PinaColada: boredom -10',
+				name: 'Pina Colada: boredom -10',
 				value: 'PlayPinaColada',
 			},
 		],
 	},
-
-	// rabbitPlay: {
-	// 	type: 'list',
-	// 	name: 'play',
-	// 	message: 'Do you want to play with?',
-	// 	choices: [
-	// 		{
-	// 			key: 'a',
-	// 			name: 'Straw: boredom -2',
-	// 			value: 'straw',
-	// 		},
-	// 		{
-	// 			key: 'b',
-	// 			name: 'Paper towels: boredom -5',
-	// 			value: 'paper',
-	// 		},
-	// 	],
-	// },
-
-	// parrotPlay: {
-	// 	type: 'list',
-	// 	name: 'play',
-	// 	message: 'Do you want to play with?',
-	// 	choices: [
-	// 		{
-	// 			key: 'a',
-	// 			name: 'Learn a word: boredom -2',
-	// 			value: 'word',
-	// 		},
-	// 		{
-	// 			key: 'b',
-	// 			name: 'Learn a swear word: boredom -5',
-	// 			value: 'swear',
-	// 		},
-	// 		{
-	// 			key: 'c',
-	// 			name: 'Swear at the mail man: boredom -10',
-	// 			value: 'mail',
-	// 		},
-	// 	],
-	// },
 
 	typeOfPlant: {
 		type: 'list',
@@ -291,7 +250,7 @@ const questions = {
 			},
 			{
 				key: 'c',
-				name: 'Give your plant a drink',
+				name: 'Water your plant',
 				value: 'drink',
 			},
 			{
@@ -358,8 +317,6 @@ async function start() {
 
 	if (typeOfPlant === 'yucca') myPlant = new Yucca(plantName);
 	else if (typeOfPlant === 'palmtree') myPlant = new PalmTree(plantName);
-	// else if (typeOfPet === 'rabbit') myPet = new Rabbit(petName);
-	// else if (typeOfPet === 'parrot') myPet = new Parrot(petName);
 
 	userChoice();
 }

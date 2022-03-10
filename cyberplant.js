@@ -5,8 +5,6 @@ const { questions } = require('./questions');
 
 const { PalmTree } = require('./plants/palmTree');
 const { Yucca } = require('./plants/yucca');
-// const { Rabbit } = require('./animals/Rabbit');
-// const { Parrot } = require('./animals/Parrot');
 
 let myPlant;
 
@@ -21,8 +19,6 @@ async function start() {
 
   if (typeOfplant === 'yucca') myPlant = new Yucca(plantName);
   else if (typeOfplant === 'palmtree') myPlant = new PalmTree(plantName);
-//   else if (typeOfplant === 'rabbit') myplant = new Rabbit(plantName);
-//   else if (typeOfplant === 'parrot') myplant = new Parrot(plantName);
 
   userChoice();
 }
