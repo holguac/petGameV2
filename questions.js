@@ -23,119 +23,119 @@ const questions = {
       ],
     },
   
-    catPlay: {
+    YuccaPlay: {
       type: 'list',
       name: 'play',
-      message: 'Do you want to play with?',
+      message: 'Do you want to listen to?',
       choices: [
         {
           key: 'a',
-          name: 'Tin foil ball: boredom -2',
-          value: 'foil',
+          name: 'AcidJam: boredom -2',
+          value: 'PlayAcidJam',
         },
         {
           key: 'b',
-          name: 'wind up mouse: boredom -5',
-          value: 'mouse',
+          name: 'Country And Western: boredom -5',
+          value: 'PlayCountryAndWestern',
         },
         {
           key: 'c',
-          name: 'Ball of wool: boredom -10',
-          value: 'wool',
+          name: 'ColdPlay: boredom -10',
+          value: 'PlayColdPlay',
         },
       ],
     },
   
-    dogPlay: {
+    palmTreePlay: {
       type: 'list',
       name: 'play',
-      message: 'Do you want to play with?',
+      message: 'Do you want to listen to ?',
       choices: [
         {
           key: 'a',
-          name: 'Stick: boredom -2',
-          value: 'stick',
+          name: 'Sean Paul: boredom -2',
+          value: 'PlaySeanPaul',
         },
         {
           key: 'b',
-          name: 'Ball: boredom -5',
-          value: 'ball',
+          name: 'Club tropicana: boredom -5',
+          value: 'PlayClubtropicana',
         },
         {
           key: 'c',
-          name: 'Chase the postman: boredom -10',
-          value: 'chase',
+          name: 'Play PinaColada: boredom -10',
+          value: 'PlayPinaColada',
         },
       ],
     },
   
-    rabbitPlay: {
-      type: 'list',
-      name: 'play',
-      message: 'Do you want to play with?',
-      choices: [
-        {
-          key: 'a',
-          name: 'Straw: boredom -2',
-          value: 'straw',
-        },
-        {
-          key: 'b',
-          name: 'Paper towels: boredom -5',
-          value: 'paper',
-        },
-      ],
-    },
+    // rabbitPlay: {
+    //   type: 'list',
+    //   name: 'play',
+    //   message: 'Do you want to play with?',
+    //   choices: [
+    //     {
+    //       key: 'a',
+    //       name: 'Straw: boredom -2',
+    //       value: 'straw',
+    //     },
+    //     {
+    //       key: 'b',
+    //       name: 'Paper towels: boredom -5',
+    //       value: 'paper',
+    //     },
+    //   ],
+    // },
   
-    parrotPlay: {
-      type: 'list',
-      name: 'play',
-      message: 'Do you want to play with?',
-      choices: [
-        {
-          key: 'a',
-          name: 'Learn a word: boredom -2',
-          value: 'word',
-        },
-        {
-          key: 'b',
-          name: 'Learn a swear word: boredom -5',
-          value: 'swear',
-        },
-        {
-          key: 'c',
-          name: 'Swear at the mail man: boredom -10',
-          value: 'mail',
-        },
-      ],
-    },
+    // parrotPlay: {
+    //   type: 'list',
+    //   name: 'play',
+    //   message: 'Do you want to play with?',
+    //   choices: [
+    //     {
+    //       key: 'a',
+    //       name: 'Learn a word: boredom -2',
+    //       value: 'word',
+    //     },
+    //     {
+    //       key: 'b',
+    //       name: 'Learn a swear word: boredom -5',
+    //       value: 'swear',
+    //     },
+    //     {
+    //       key: 'c',
+    //       name: 'Swear at the mail man: boredom -10',
+    //       value: 'mail',
+    //     },
+    //   ],
+    // },
   
     typeOfPet: {
       type: 'list',
-      name: 'typeOfPet',
+      name: 'typeOfPlant',
       message:
-        'What type of pet would you like? Please choose from the following options:',
+        'What type of plant would you like? Please choose from the following options:',
       choices: [
         {
           key: 'a',
-          name: 'Cat',
-          value: 'cat',
+          name: 'Yucca',
+          value: 'yucca',
         },
         {
           key: 'b',
-          name: 'Dog',
-          value: 'dog',
+          name: 'palmTree',
+          value: 'palmtree',
         },
-        {
-          key: 'c',
-          name: 'Rabbit',
-          value: 'rabbit',
-        },
-        {
-          key: 'd',
-          name: 'Parrot',
-          value: 'parrot',
-        },
+        // {
+        //   key: 'c',
+        //   name: 'Rabbit',
+        //   value: 'rabbit',
+        // },
+        // {
+        //   key: 'd',
+        //   name: 'Parrot',
+        //   value: 'parrot',
+        // },
       ],
     },
   
@@ -146,22 +146,22 @@ const questions = {
       choices: [
         {
           key: 'a',
-          name: 'Play with your pet',
+          name: 'Play it some music',
           value: 'play',
         },
         {
           key: 'b',
-          name: 'Feed your pet',
+          name: 'Feed your plant',
           value: 'feed',
         },
         {
           key: 'c',
-          name: 'Give your pet a drink',
+          name: 'Give your plant a drink',
           value: 'drink',
         },
         {
           key: 'd',
-          name: "View your pet's status",
+          name: "View your plant status",
           value: 'status',
         },
         {
@@ -176,7 +176,7 @@ const questions = {
       type: 'list',
       name: 'quitChoice',
       message:
-        'Are you sure you want to quit? This will mean your pet has to be returned to the Animal Shelter...',
+        'Are you sure you want to quit? This will mean your plant will die :(',
       choices: [
         {
           key: 'a',
