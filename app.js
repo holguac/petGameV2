@@ -124,8 +124,8 @@ class Yucca extends Plant {
 	async play() {
 		const { play } = await inquirer.prompt(questions.YuccaPlay);
 
-		if (play === 'PlayAcid Jam') this.boredom(-2);
-		if (play === 'Play CountryAndWestern') this.boredom(-5);
+		if (play === 'PlayAcidJazz') this.boredom(-2);
+		if (play === 'PlayCountryAndWestern') this.boredom(-5);
 		if (play === 'PlayColdPlay') this.boredom(-10);
 	}
 }

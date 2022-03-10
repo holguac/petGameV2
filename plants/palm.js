@@ -12,9 +12,9 @@ class Palm extends Plant {
   async play() {
     const { play } = await inquirer.prompt(questions.palmPlay);
 
-    if (play === 'PlaySeanPaul') this.boredom(-2);
-    if (play === 'PlayClubtropicana') this.boredom(-5);
-    if (play === 'PlayPinaColada') this.boredom(-10);
+    if (play === 'PlayAcidJazz') this.boredom(-2);
+    if (play === 'PlayCountryAndWestern') this.boredom(-5);
+    if (play === 'PlayColdPlay') this.boredom(-10);
   }
 }
 
