@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 
 const { questions } = require('../questions');
-const { Plant } = require('../plant');
+const { Plant } = require('../app');
 
 class PalmTree extends Plant {
   constructor(name) {

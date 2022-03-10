@@ -2,7 +2,7 @@
 const inquirer = require('inquirer');
 
 const { questions } = require('../questions');
-const { Plant } = require('../plant');
+const { Plant } = require('../app');
 
 class Yucca extends Plant {
   constructor(name) {
