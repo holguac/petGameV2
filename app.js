@@ -1,7 +1,7 @@
 
-//import inquirer
+//import inquirer to enable user input in terminal 
 const inquirer = require('inquirer');
-
+// import questions.js file 
 const {questions} = require("./questions");
 
 
@@ -12,6 +12,7 @@ class Plant {
 	_boredom;
 	_isAlive = true;
 	_status;
+
 
 	constructor(name) {
 		this._name = name;
@@ -146,7 +147,6 @@ class PalmTree extends Plant {
 		if (play === 'PlayPinaColada') this.boredom(-10);
 	}
 }
-
 
 let myPlant;
 

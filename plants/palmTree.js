@@ -1,6 +1,6 @@
-
+// import user input fucntion
 const inquirer = require('inquirer');
-
+// link up to other .js files 
 const { questions } = require('../questions');
 const { Plant } = require('../app');
 

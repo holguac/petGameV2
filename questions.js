@@ -1,6 +1,7 @@
-
+// require used to link to external .js file 
 const { Plant } = require('./app');
 
+// questions and options for the game
 const questions = {
     eat: {
       type: 'list',
@@ -161,6 +162,7 @@ const questions = {
     },
   };
   
+  // Used to instruct node.js which sections of code to export from this file
   module.exports = {
     questions,
   };
