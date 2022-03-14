@@ -1,4 +1,6 @@
 
+const { Plant } = require('./app');
+
 const questions = {
     eat: {
       type: 'list',
@@ -7,18 +9,18 @@ const questions = {
       choices: [
         {
           key: 'a',
-          name: 'Snack: hunger -2',
-          value: 'snack',
+          name: 'Sunlight: hunger -10',
+          value: 'sunlight',
         },
         {
           key: 'b',
-          name: 'Meal: hunger -5',
-          value: 'meal',
+          name: 'Pie and Mash: hunger -5',
+          value: 'pie',
         },
         {
           key: 'c',
-          name: 'Treat: hunger -10',
-          value: 'treat',
+          name: 'IPA: hunger +10',
+          value: 'IPA',
         },
       ],
     },
@@ -30,17 +32,17 @@ const questions = {
       choices: [
         {
           key: 'a',
-          name: 'AcidJam: boredom -2',
-          value: 'PlayAcidJam',
+          name: 'Acid Jazz: boredom -2',
+          value: 'PlayAcidJazz',
         },
         {
           key: 'b',
-          name: 'Country And Western: boredom -5',
+          name: 'Country and Western: boredom -5',
           value: 'PlayCountryAndWestern',
         },
         {
           key: 'c',
-          name: 'ColdPlay: boredom -10',
+          name: 'Coldplay: boredom -10',
           value: 'PlayColdPlay',
         },
       ],
@@ -69,7 +71,7 @@ const questions = {
       ],
     },
   
-    typeOfPet: {
+    typeOfPlant: {
       type: 'list',
       name: 'typeOfPlant',
       message:
@@ -82,7 +84,7 @@ const questions = {
         },
         {
           key: 'b',
-          name: 'palmTree',
+          name: 'Palm Tree',
           value: 'palmtree',
         },
       ],

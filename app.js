@@ -2,6 +2,9 @@
 //import inquirer
 const inquirer = require('inquirer');
 
+const {questions} = require("./questions");
+
+
 class Plant {
 	_health;
 	_hunger;
@@ -72,9 +75,9 @@ class Plant {
 	async eats() {
 		const { food } = await inquirer.prompt(questions.eat);
 
-		if (food === 'snack') this.hunger(-2);
-		if (food === 'meal') this.hunger(-5);
-		if (food === 'treat') this.hunger(-10);
+		if (food === 'sunlight') this.hunger(-10);
+		if (food === 'pie') this.hunger(-5);
+		if (food === 'ipa') this.hunger(10);
 
 		return this._hunger;
 	}
@@ -144,165 +147,6 @@ class PalmTree extends Plant {
 	}
 }
 
-const questions = {
-	eat: {
-		type: 'list',
-		name: 'food',
-		message: `What do you want to feed ${this.name}?`,
-		choices: [
-			{
-				key: 'a',
-				name: 'Snack: hunger -2',
-				value: 'snack',
-			},
-			{
-				key: 'b',
-				name: 'Meal: hunger -5',
-				value: 'meal',
-			},
-			{
-				key: 'c',
-				name: 'Treat: hunger -10',
-				value: 'treat',
-			},
-		],
-	},
-
-	YuccaPlay: {
-		type: 'list',
-		name: 'play',
-		message: 'Do you want to listen to ?',
-		choices: [
-			{
-				key: 'a',
-				name: ' AcidJam: boredom -2',
-				value: 'PlayAcidJam',
-			},
-			{
-				key: 'b',
-				name: 'Country And Western: boredom -5',
-				value: 'PlayCountryAndWestern',
-			},
-			{
-				key: 'c',
-				name: 'ColdPlay: boredom -10',
-				value: 'PlayColdPlay',
-			},
-		],
-	},
-
-	palmTreePlay: {
-		type: 'list',
-		name: 'play',
-		message: 'Do you want to listen to ?',
-		choices: [
-			{
-				key: 'a',
-				name: 'Sean Paul: boredom -2',
-				value: 'PlaySeanPaul',
-			},
-			{
-				key: 'b',
-				name: 'Club Tropicana: boredom -5',
-				value: 'PlayClubtropicana',
-			},
-			{
-				key: 'c',
-				name: 'Pina Colada: boredom -10',
-				value: 'PlayPinaColada',
-			},
-		],
-	},
-
-	typeOfPlant: {
-		type: 'list',
-		name: 'typeOfPlant',
-		message:
-			'What type of plant would you like? Please choose from the following options:',
-		choices: [
-			{
-				key: 'a',
-				name: 'Yucca',
-				value: 'yucca',
-			},
-			{
-				key: 'b',
-				name: 'palmTree',
-				value: 'palmtree',
-			},
-		],
-	},
-
-	choice: {
-		type: 'list',
-		name: 'choice',
-		message: 'What would you like to do?',
-		choices: [
-			{
-				key: 'a',
-				name: 'Play it some music',
-				value: 'play',
-			},
-			{
-				key: 'b',
-				name: 'Feed your plant',
-				value: 'feed',
-			},
-			{
-				key: 'c',
-				name: 'Water your plant',
-				value: 'drink',
-			},
-			{
-				key: 'd',
-				name: "View your plants status",
-				value: 'status',
-			},
-			{
-				key: 'e',
-				name: 'Quit the game',
-				value: 'quit',
-			},
-		],
-	},
-
-	quitChoice: {
-		type: 'list',
-		name: 'quitChoice',
-		message:
-			'Are you sure you want to quit? This will mean your plant will die :(',
-		choices: [
-			{
-				key: 'a',
-				name: "Yes, I'm sure.",
-				value: 'yes',
-			},
-			{
-				key: 'b',
-				name: "No, I love my plant",
-				value: 'no',
-			},
-		],
-	},
-
-	playAgain: {
-		type: 'list',
-		name: 'playAgain',
-		message: 'Would you like to play again?',
-		choices: [
-			{
-				key: 'a',
-				name: 'Yes',
-				value: 'yes',
-			},
-			{
-				key: 'b',
-				name: 'No',
-				value: 'no',
-			},
-		],
-	},
-};
 
 let myPlant;
 
